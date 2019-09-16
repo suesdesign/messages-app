@@ -26,6 +26,6 @@ Page one 'Submit message' is for a person to leave a message with their first na
 
 Page two 'Message' contains all the messages.
 
-To edit a message, click 'Edit', the message will appear on the form below ready to edit. Click edit to update the message. A success message will appear saying 'The record has been updated'.
+To edit a message, click 'Edit', the message will appear on the form below ready to edit. Click the edit button on the form to update the message. A success message will appear saying 'The record has been updated'.
 
 To delete a message, click 'Delete'. A success message will appear saying 'The record has been deleted'.
