@@ -1,8 +1,8 @@
-#Messages App
+# Messages App
 
 Leave a message and display, edit and delete all the messages.
 
-##Instructions
+## Instructions
 
 Create a database named messages, assign a user to it with the name of messages with a password. The password is iixDQwcHBGEks&!k in this example, change it to something else and update the file called db.php with the new password.
 
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `msg` (
 
 ```
 
-##How to use
+## How to use
 
 Page one 'Submit message' is for a person to leave a message with their first name, last name and email address. Click 'Submit' to submit the message, a message will appear saying 'The message has been submitted'.
 
