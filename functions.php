@@ -20,7 +20,9 @@ function createMessage() {
 		if(!$result){
 			die('Query FAILED' . mysqli_error());
 		}
+		mysqli_close($connection);
 	}
+
 }
 
 /**
@@ -35,6 +37,7 @@ function readMessages() {
 		die('Query FAILED' . mysqli_error());
 
 	}
+	
 	?>
 	<table class="table">
 	<thead>
@@ -61,6 +64,7 @@ function readMessages() {
 		</td>
 	</tr>
 	<?php
+	//mysqli_close($connection);
 	}
 	?></table>
 <?php }
