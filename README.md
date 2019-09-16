@@ -6,7 +6,7 @@ Leave a message and display, edit and delete all the messages.
 
 Create a database named messages, assign a user to it with the name of messages with a password. The password is iixDQwcHBGEks&!k in this example, change it to something else and update the file called db.php with the new password.
 
-Do the following SQL query on the database
+Do the following SQL query on the database:
 
 ```
 CREATE TABLE IF NOT EXISTS `msg` (
