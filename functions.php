@@ -1,4 +1,7 @@
 <?php
+/**
+ * Submit the message
+ */
 
 function createMessage() {
 	if(isset($_POST['submit'])) {
@@ -19,6 +22,10 @@ function createMessage() {
 		}
 	}
 }
+
+/**
+ * Output the messages
+ */
 
 function readMessages() {
 	global $connection;
@@ -58,6 +65,10 @@ function readMessages() {
 	?></table>
 <?php }
 
+/**
+ * Edit the message
+ */
+
 function editMessages() {
 	global $id;
 	if (isset($_REQUEST["edit"])) {
@@ -90,6 +101,10 @@ function editMessages() {
 	}
 }
 
+/**
+ * Display the message to be edited
+ */
+
 function formData() {
 	global $connection;
 	global $editFirstName, $editLastName, $editEmailAddress, $editMessage;
@@ -105,5 +120,22 @@ function formData() {
 		$editLastName = $row['lastname'];
 		$editEmailAddress = $row['emailaddress'];
 		$editMessage = $row['message'];
+	}
+}
+
+/**
+ * Delete the message
+ */
+
+function deleteMessages() {
+    if(isset($_GET['del'])) {
+		global $connection;
+		$id = $_GET['del'];
+		$query = "DELETE FROM msg ";
+		$query .= "WHERE id = $id "; 
+		$result = mysqli_query($connection, $query);
+		if(!$result) {
+		     die("QUERY FAILED" . mysqli_error($connection));    
+		}
 	}
 }

@@ -4,6 +4,7 @@
 	include_once "functions.php";
 	editMessages();
 	formData();
+	deleteMessages();
 ?>
 
 <body>
@@ -41,6 +42,9 @@
 		<?php 
 		if(isset($_POST['submit'])) {
 			echo "<p>Record updated</p>";
+		}
+		if(isset($_GET['del'])) {
+			echo "<p>Record deleted</p>";
 		}
 		?>
 	</div><!--.col-sm-6-->
