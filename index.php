@@ -29,12 +29,17 @@
 				</div><!--.form-group-->
 			<input id="contact_button" class="btn btn-primary" type="submit" name="submit" value="Submit">  
 			</form>
+		</div><!--.col-sm-6-->
+		<div class="col-sm-6">
 			<?php 
-			if(isset($_POST['submit'])) {
-				echo "<p>Message submitted</p>";
-			}
+				if(isset($_POST['submit'])) {
+					echo "<div class='alert alert-success'>
+  						<strong>The message has been submitted</strong>
+					</div>";
+				}
 			?>
 		</div><!--.col-sm-6-->
-	</div><!--.row-->
+			
+		</div><!--.row-->
 </div><!--.container-->
 <?php include_once "includes/footer.php";

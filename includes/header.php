@@ -8,13 +8,13 @@
 </head>
 <?php $currentPage = basename($_SERVER['SCRIPT_NAME']); ?>
 <body>
-	<div class="container">
-		<nav class="nav justify-content-center">
+	<div class="container mt-3">
+		<nav class="nav justify-content-center mb-3">
 			<ul class="nav nav-pills">
-				<li class="nav-item">
+				<li class="nav-item mr-1">
 					<a class="nav-link <?php if($currentPage === 'index.php'){echo 'active';}?>" href="index.php">Submit message</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item m1-1">
 					<a class="nav-link <?php if($currentPage === 'read_messages.php'){echo 'active';}?>" href="read_messages.php">Messages</a>
 				</li>
 			</ul>

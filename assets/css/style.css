@@ -1,3 +1,48 @@
 .error {
 	color: red;
 }
+
+.nav-link {
+	background-color: purple;
+}
+
+.nav-item .active {
+	background-color: #1c022b !important;
+}
+
+a.nav-link {
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: purple;
+	border: purple;
+}
+
+.btn-primary:hover {
+	background-color: #1c022b;
+}
+
+.edit_btn, .del_btn {
+	color: purple;
+}
+
+.edit_btn:hover, .del_btn:hover {
+	color: #1c022b;
+}
+
+h1, h2, th {
+	color: purple;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f4ebfa;
+}
+
+table {
+	border-bottom: 1px solid #ebe8ea;
+}
+
+thead {
+	background-color: #f4ebfa;
+}

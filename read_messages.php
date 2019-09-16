@@ -13,8 +13,8 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2 class="text-center">Edit messages</h2>
-			<form action="read_messages.php" method="post">
+			<h2 class="text-center mt-3">Edit messages</h2>
+			<form action="read_messages.php" method="post" class="mb-3">
 				<div class="form-group">
 					<input type="hidden" name="id" class="form-control" value="<?php echo $id; ?>">
 				</div><!--.form-group-->
@@ -34,7 +34,7 @@
 					<label for="message">Message</label>
 					<textarea name="message" class="form-control" ><?php echo $editMessage; ?></textarea>
 				</div><!--.form-group-->
-			<input class="btn btn-primary" type="submit" name="submit" value="Submit">  
+			<input class="btn btn-primary" type="submit" name="submit" value="Edit">  
 			</form>
 		</div><!--.col-sm-6-->
 		<div class="col-sm-6">
