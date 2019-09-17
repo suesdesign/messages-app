@@ -39,16 +39,8 @@
 		</div><!--.col-sm-6-->
 		<div class="col-sm-6">
 			<?php 
-			if(isset($_POST['submit'])) {
-				echo "<div class='alert alert-success'>
-  					<strong>The record has been updated</strong>
-				</div>";
-			}
-			if(isset($_GET['del'])) {
-				echo "<div class='alert alert-success'>
-  					<strong>The record has been deleted</strong>
-				</div>";
-			}
+			alertUpdated();
+			alertDeleted();
 			?>
 		</div><!--.col-sm-6-->
 </div><!--.row-->

@@ -143,3 +143,27 @@ function deleteMessages() {
 		}
 	}
 }
+
+/**
+ * Alert to say the message has been updated
+ */
+
+function alertUpdated() {
+	if(isset($_POST['submit'])) {
+		echo "<div class='alert alert-success'>
+			<strong>The record has been updated</strong>
+		</div>";
+	}
+}
+
+/**
+ * Alert to say the message has been deleted
+ */
+
+function alertDeleted() {
+	if(isset($_GET['del'])) {
+		echo "<div class='alert alert-success'>
+			<strong>The record has been deleted</strong>
+		</div>";
+	}
+}
